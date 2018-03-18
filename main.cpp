@@ -2,20 +2,28 @@
 #include <cstdlib>
 #include <string>
 #include <fstream>
+#include <conio.h>
 #include "User.h"
 #include "Course.h"
 #include "Presence.h"
 #include "Score.h"
 #include "GeneralFeatures.h"
-
-
+#include "Console.h"
+#include "Menu.h"
 using namespace std;
 
+//int menu(int n);
+//int loginMenu(int n);
 int main() {
-	User current_login;
+	system("color 30");
+	int option = loginMenu(5);
+	if(option != 1)
+		menu(5);
+	//system("pause");
+	/*User current_login;
 	login(&current_login);
 	current_login.printinfo();
-	resetPassword(&current_login);
+	resetPassword(&current_login);*/
 	/*User student("1753123", "Pham Hoang Anh Tuan", "0000000000", "17CLC3");
 	User Lec("Ho Tuan Thanh", "???", 2);*/
 	/*date test;
